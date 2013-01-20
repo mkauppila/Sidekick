@@ -11,8 +11,8 @@
 @interface UIColor (Sidekick)
 
 /**
- Creates UIColor from the given hex string. The hex string needs to
- be in "#RRGGBBAA" format.
+ Creates UIColor from the given hex string. The hex string can be in the 
+ following formats: #RRGGBBAA or #RRGGBB. The # can be omitted if needed.
  
  @param hex representation of the color
  @return Created UIColor

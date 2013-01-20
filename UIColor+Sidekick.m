@@ -14,11 +14,27 @@ typedef unsigned long ulong;
 
 + (UIColor *)colorWithHex:(NSString *)hexString
 {
-	// Remove '#' from the beginning
-	hexString = [hexString substringFromIndex:1];
+	// Remove '#' from the beginning if present
+	if ([hexString characterAtIndex:0] == '#') {
+		hexString = [hexString substringFromIndex:1];
+	}
+	
+	// Create itss
+	const NSUInteger lenght = hexString.length;
+	if (lenght == 8) {
+		// nothing to do
+	} else if (lenght == 6) {
+		hexString = [hexString stringByAppendingString:@"ff"];
+	} else {
+		// Handle error: hex string has incorrect length.
+		NSString *format = @"Given hex string (%@) has incorrect lenght: %d. "
+							 "It should be either 8 or 6.";
+		[NSException raise:@"Invalid hex string"
+					format:format, hexString, lenght];
+	}
 	const int baseNumber = 16;
 	ulong rgba = strtoul([hexString UTF8String], NULL, baseNumber);
-	DLog(@"%lul", rgba);
+
 	return [UIColor colorWithRGBA:rgba];
 }
 
