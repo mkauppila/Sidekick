@@ -13,7 +13,7 @@
 - (id)firstObject
 {
 	id object = nil;
-	if (self.count >= 1) {
+	if (self.count > 0) {
 		object = [self objectAtIndex:0];
 	}
 	return object;
