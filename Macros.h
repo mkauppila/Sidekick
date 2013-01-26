@@ -6,6 +6,11 @@
 //  Copyright (c) 2013 markus.kauppila. All rights reserved.
 //
 
+// @title Clamp macros
+
+#import <Foundation/Foundation.h>
+
+#define clamp(value, minimum, maximum) (MIN(MAX(min, value), max))
 
 /** @title Debug macros */
 
