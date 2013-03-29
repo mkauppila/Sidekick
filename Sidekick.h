@@ -10,6 +10,8 @@
 #import "Functions.h"
 
 /**
+ Sidekick requires QuartzCore Framework.
+ 
  TODO
 	- clampf(value, min, max)  /OK
 		- clampf(2.3, 0.0, 1.0) -> 1.0
@@ -24,13 +26,28 @@
 	- IS_IPHONE /OK
 	
 	- dispatchToMainQueue(BOOL async, block)
-	- dispatchToBackgroundQueue(<same as above)
+	- dispatchToBackgroundQueue(<same as above>)
 	- isMainQueue() -> BOOL
 	- isMainThread();
  
  
  as isSameDate:(NSDate *) category to it
+ tomorrow
+ yesterday
+ midnight functions
+ 
+ add [UIView snapshot] /OK
+and IS_IPHONE5  /OK
+ 
+Add LibraryPath (useful as explained in link below):
+	http://developer.apple.com/library/ios/#qa/qa1699/_index.html
 
+ // [NSString asDocumentPath and asDocumentPathWithSuffix]
+ 
+// https://gist.github.com/mpospese/5053969 
+ // Add stuff from that gist, give credit where credit is due.
+ // http://markpospesel.wordpress.com/2013/02/27/cgrectintegral/?utm_source=iOS+Dev+Weekly&utm_campaign=ca8aa0f371-iOS_Dev_Weekly_Issue_83&utm_medium=email
+ 
  
  Refer to some RFC in the documentation (look this for those:
  http://stackoverflow.com/questions/6253044/how-to-properly-convert-last-modified-string-from-a-http-response-to-a-nsdate-on)
@@ -61,4 +78,8 @@
 
 // Categories
 #import "UIColor+Sidekick.h"
+#import "UIView+Sidekick.h"
+#import "NSArray+Sidekick.h"
+#import "NSString+Sidekick.h"
+#import "NSDate+Sidekick.h"
 

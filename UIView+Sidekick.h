@@ -11,9 +11,17 @@
 /**
  TODO:
 	- Add more convenient setters
+ 
+   Remove all convenience setters/getters, I've never really used those
  */
 
 @interface UIView (Sidekick)
+
+/**
+ Takes snapshot of the view (including all the subviews)
+ @return The snapshot as `UIImage` or `nil` on failure.
+ */
+- (UIImage *)snapshot;
 
 /**
  Sets the new origin Y value for the v

@@ -9,13 +9,28 @@
 #import <Foundation/Foundation.h>
 
 BOOL IS_IPHONE(void);
+BOOL IS_IPHONE5(void);
 BOOL IS_IPAD(void);
 
 BOOL HAS_RETINA_DISPLAY(void);
 
+NSString *DocumentsPath(void);
+NSString *LibraryPath(void);
+NSString *BundlePath(void);
+
+// Used `UIImage imageNamed:` which internally caches the result
+UIImage *ImageNamedCached(NSString *name);
+
+// Directly reads the image from bundle without caching
+// TODO: Appends png automatically and tries to load @2x with using
+// retina screen. If file extension is specified (@"plaa.jpg"), dont append
+// png but use the original. Should function like `ImageNamedCached` but no
+// caching
 UIImage *ImageNamed(NSString *name);
 
+// Add double counterpart (long double would be uselesS)
 BOOL FloatEqualsZero(float value);
+BOOL FloatEqualsFloat(float left, float right);
 
 /**
  @name Stringiy CoreGraphics structures

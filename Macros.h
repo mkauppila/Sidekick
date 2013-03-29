@@ -28,3 +28,15 @@
 
 #define ZAssert(condition, ...) do { if (!(condition)) { ALog(__VA_ARGS__); }} while(0)
 
+
+/** @title Threading macros */
+
+#ifdef DEBUG
+#define AssertIsMainThread()  \
+	do { \
+	NSAssert([NSThread isMainThread], @"Not running in main thread"); \
+	} while(0)
+#else
+#define AssertIsMainThread() do { } while(0)
+#endif
+

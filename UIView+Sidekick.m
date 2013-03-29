@@ -8,7 +8,21 @@
 
 #import "UIView+Sidekick.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 @implementation UIView (Sidekick)
+
+- (UIImage *)snapshot
+{
+	CGRect rect = [self bounds];
+	// Set scaling to native
+	UIGraphicsBeginImageContextWithOptions(rect.size, YES, 0.0f);
+	CGContextRef context = UIGraphicsGetCurrentContext();
+	[self.layer renderInContext:context];
+	UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	return snapshotImage;
+}
 
 - (void)setOriginY:(CGFloat)newOriginY
 {
