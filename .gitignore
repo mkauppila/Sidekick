@@ -17,3 +17,7 @@ profile
 DerivedData
 .idea/
 *.hmap
+
+# Cocoapods
+Pods/
+Podfile.lock
