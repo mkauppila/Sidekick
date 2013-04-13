@@ -13,6 +13,12 @@
 		288876281719B38900DE7C72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2888761F1719B38900DE7C72 /* InfoPlist.strings */; };
 		288876291719B38900DE7C72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 288876211719B38900DE7C72 /* main.m */; };
 		2888762A1719B38900DE7C72 /* Sidekick-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 288876221719B38900DE7C72 /* Sidekick-Info.plist */; };
+		288876501719CC1D00DE7C72 /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 288876431719CC1D00DE7C72 /* Functions.m */; };
+		288876511719CC1D00DE7C72 /* NSArray+Sidekick.m in Sources */ = {isa = PBXBuildFile; fileRef = 288876461719CC1D00DE7C72 /* NSArray+Sidekick.m */; };
+		288876521719CC1D00DE7C72 /* NSDate+Sidekick.m in Sources */ = {isa = PBXBuildFile; fileRef = 288876481719CC1D00DE7C72 /* NSDate+Sidekick.m */; };
+		288876531719CC1D00DE7C72 /* NSString+Sidekick.m in Sources */ = {isa = PBXBuildFile; fileRef = 2888764A1719CC1D00DE7C72 /* NSString+Sidekick.m */; };
+		288876541719CC1D00DE7C72 /* UIColor+Sidekick.m in Sources */ = {isa = PBXBuildFile; fileRef = 2888764D1719CC1D00DE7C72 /* UIColor+Sidekick.m */; };
+		288876551719CC1D00DE7C72 /* UIView+Sidekick.m in Sources */ = {isa = PBXBuildFile; fileRef = 2888764F1719CC1D00DE7C72 /* UIView+Sidekick.m */; };
 		28C2FCC717196762006F462D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2FCC617196762006F462D /* UIKit.framework */; };
 		28C2FCC917196762006F462D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2FCC817196762006F462D /* Foundation.framework */; };
 		28C2FCCB17196762006F462D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2FCCA17196762006F462D /* CoreGraphics.framework */; };
@@ -27,6 +33,20 @@
 		288876211719B38900DE7C72 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		288876221719B38900DE7C72 /* Sidekick-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sidekick-Info.plist"; sourceTree = "<group>"; };
 		288876231719B38900DE7C72 /* Sidekick-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sidekick-Prefix.pch"; sourceTree = "<group>"; };
+		288876421719CC1D00DE7C72 /* Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
+		288876431719CC1D00DE7C72 /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Functions.m; sourceTree = "<group>"; };
+		288876441719CC1D00DE7C72 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		288876451719CC1D00DE7C72 /* NSArray+Sidekick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sidekick.h"; sourceTree = "<group>"; };
+		288876461719CC1D00DE7C72 /* NSArray+Sidekick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sidekick.m"; sourceTree = "<group>"; };
+		288876471719CC1D00DE7C72 /* NSDate+Sidekick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Sidekick.h"; sourceTree = "<group>"; };
+		288876481719CC1D00DE7C72 /* NSDate+Sidekick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Sidekick.m"; sourceTree = "<group>"; };
+		288876491719CC1D00DE7C72 /* NSString+Sidekick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sidekick.h"; sourceTree = "<group>"; };
+		2888764A1719CC1D00DE7C72 /* NSString+Sidekick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sidekick.m"; sourceTree = "<group>"; };
+		2888764B1719CC1D00DE7C72 /* Sidekick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sidekick.h; sourceTree = "<group>"; };
+		2888764C1719CC1D00DE7C72 /* UIColor+Sidekick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Sidekick.h"; sourceTree = "<group>"; };
+		2888764D1719CC1D00DE7C72 /* UIColor+Sidekick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Sidekick.m"; sourceTree = "<group>"; };
+		2888764E1719CC1D00DE7C72 /* UIView+Sidekick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Sidekick.h"; sourceTree = "<group>"; };
+		2888764F1719CC1D00DE7C72 /* UIView+Sidekick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Sidekick.m"; sourceTree = "<group>"; };
 		28C2FCC317196762006F462D /* Sidekick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sidekick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C2FCC617196762006F462D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28C2FCC817196762006F462D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,9 +92,31 @@
 			name = "Supporting files";
 			sourceTree = "<group>";
 		};
+		288876411719CC1D00DE7C72 /* Sidekick */ = {
+			isa = PBXGroup;
+			children = (
+				288876421719CC1D00DE7C72 /* Functions.h */,
+				288876431719CC1D00DE7C72 /* Functions.m */,
+				288876441719CC1D00DE7C72 /* Macros.h */,
+				288876451719CC1D00DE7C72 /* NSArray+Sidekick.h */,
+				288876461719CC1D00DE7C72 /* NSArray+Sidekick.m */,
+				288876471719CC1D00DE7C72 /* NSDate+Sidekick.h */,
+				288876481719CC1D00DE7C72 /* NSDate+Sidekick.m */,
+				288876491719CC1D00DE7C72 /* NSString+Sidekick.h */,
+				2888764A1719CC1D00DE7C72 /* NSString+Sidekick.m */,
+				2888764B1719CC1D00DE7C72 /* Sidekick.h */,
+				2888764C1719CC1D00DE7C72 /* UIColor+Sidekick.h */,
+				2888764D1719CC1D00DE7C72 /* UIColor+Sidekick.m */,
+				2888764E1719CC1D00DE7C72 /* UIView+Sidekick.h */,
+				2888764F1719CC1D00DE7C72 /* UIView+Sidekick.m */,
+			);
+			path = Sidekick;
+			sourceTree = "<group>";
+		};
 		28C2FCBA17196761006F462D = {
 			isa = PBXGroup;
 			children = (
+				288876411719CC1D00DE7C72 /* Sidekick */,
 				288876191719B38900DE7C72 /* Tests */,
 				28C2FCC517196762006F462D /* Frameworks */,
 				28C2FCC417196762006F462D /* Products */,
@@ -186,6 +228,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				288876291719B38900DE7C72 /* main.m in Sources */,
+				288876501719CC1D00DE7C72 /* Functions.m in Sources */,
+				288876511719CC1D00DE7C72 /* NSArray+Sidekick.m in Sources */,
+				288876521719CC1D00DE7C72 /* NSDate+Sidekick.m in Sources */,
+				288876531719CC1D00DE7C72 /* NSString+Sidekick.m in Sources */,
+				288876541719CC1D00DE7C72 /* UIColor+Sidekick.m in Sources */,
+				288876551719CC1D00DE7C72 /* UIView+Sidekick.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
