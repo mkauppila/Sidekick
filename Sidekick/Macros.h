@@ -10,7 +10,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define clamp(value, minimum, maximum) (MIN(MAX(min, value), max))
+#define clamp(value, minimum, maximum) (MIN(MAX((minimum), (value)), (maximum)))
 
 /** @title Debug macros */
 
