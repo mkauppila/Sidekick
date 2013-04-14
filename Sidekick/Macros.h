@@ -30,13 +30,19 @@
 
 
 /** @title Threading macros */
+/** Assert macros only work within objective-c methods **/
 
 #ifdef DEBUG
 #define AssertIsMainThread()  \
 	do { \
 	NSAssert([NSThread isMainThread], @"Not running in main thread"); \
 	} while(0)
+#define AssertIsBackgroundThread() \
+	do { \
+	NSAssert([NSThread isMainThread] == NO, @"Not running in background thread"); \
+	} while(0)
 #else
-#define AssertIsMainThread() do { } while(0)
+#define AssertIsMainThread() do {} while(0)
+#define AssertIsBackgroundThread() do {} while (0)
 #endif
 
