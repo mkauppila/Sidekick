@@ -8,11 +8,17 @@
 
 #import "Functions.h"
 
+#import "NSString+Sidekick.h"
+
+#pragma mark - Device support
+
 BOOL IS_IPHONE(void) { return [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone; }
 BOOL IS_IPHONE5(void) { return IS_IPHONE() && [UIScreen mainScreen]. bounds.size.height == 568.0f; }
 BOOL IS_IPAD(void) { return [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad; }
 
 BOOL HAS_RETINA_DISPLAY(void) { return [[UIScreen mainScreen] scale] == 2.0f; }
+
+#pragma mark - Shorthands for paths
 
 NSString *DocumentsPath(void)
 {
@@ -26,6 +32,7 @@ NSString *LibraryPath(void)
 
 NSString *BundlePath(void) { return [[NSBundle mainBundle] bundlePath]; }
 
+#pragma mark - Image helpers
 
 UIImage *ImageNamedCached(NSString *name) { return [UIImage imageNamed:name]; }
 
@@ -75,12 +82,40 @@ UIImage *ImageNamed(NSString *name)
 #endif
 }
 
+#pragma Floating-point helpers
 
 BOOL FloatEqualsZero(float value) { return fabsf(value) < FLT_EPSILON; }
 BOOL FloatEqualsFloat(float left, float right) { return fabsf(left-right) < FLT_EPSILON; }
+
+#pragma mark - Stringify
 
 NSString *CGRectToString(CGRect rect) { return NSStringFromCGRect(rect); }
 NSString *CGPointToString(CGPoint point) { return NSStringFromCGPoint(point); }
 NSString *CGSizeToString(CGSize size) { return NSStringFromCGSize(size); }
 
 NSString *BoolToString(BOOL value) { return value ? @"YES" : @"NO"; }
+
+#pragma mark - Threading
+
+void DispatchToMainThread(bool async, dispatch_block_t block) {
+	// If already running in main thread, just execute the block to prevent
+	// deadlocking
+	if ([NSThread mainThread]) {
+		block();
+	} else {
+		if (async) {
+			dispatch_async(dispatch_get_main_queue(), block);
+		} else {
+			dispatch_sync(dispatch_get_main_queue(), block);
+		}
+	}
+}
+
+void DispatchToBackgroundThread(bool async, dispatch_block_t block) {
+	dispatch_queue_t backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0);
+	if (async) {
+		dispatch_async(backgroundQueue, block);
+	} else {
+		dispatch_sync(backgroundQueue, block);
+	}
+}

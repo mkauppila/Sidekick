@@ -49,5 +49,7 @@ NSString *CGRectToString(CGRect rect);
 NSString *CGPointToString(CGPoint point);
 NSString *CGSizeToString(CGSize size);
 
-
 NSString *BoolToString(BOOL value);
+
+void DispatchToMainThread(bool async, dispatch_block_t block);
+void DispatchToBackgroundThread(bool async, dispatch_block_t block);
