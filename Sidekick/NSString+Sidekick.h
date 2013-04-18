@@ -10,7 +10,11 @@
 
 @interface NSString (Sidekick)
 
-- (NSString *)asDirectoryPath;
+- (NSString *)asDocumentsPath;
+- (NSString *)asLibraryPath;
 - (NSString *)asBundlePath;
+
+- (NSString *)asDocumentsPathWithExtension:(NSString *)extension;
+- (NSString *)asLibraryPathWithExtension:(NSString *)extension;
 
 @end

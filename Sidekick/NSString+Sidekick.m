@@ -12,9 +12,14 @@
 
 @implementation NSString (Sidekick)
 
-- (NSString *)asDirectoryPath
+- (NSString *)asDocumentsPath
 {
 	return [DocumentsPath() stringByAppendingPathComponent:self];
+}
+
+- (NSString *)asLibraryPath
+{
+	return [LibraryPath() stringByAppendingPathComponent:self];
 }
 
 - (NSString *)asBundlePath
@@ -22,5 +27,14 @@
 	return [BundlePath() stringByAppendingPathComponent:self];
 }
 
+- (NSString *)asDocumentsPathWithExtension:(NSString *)extension
+{
+	return [[self asDocumentsPath] stringByAppendingPathExtension:extension];
+}
+
+- (NSString *)asLibraryPathWithExtension:(NSString *)extension
+{
+	return [[self asLibraryPath] stringByAppendingPathExtension:extension];
+}
 
 @end
