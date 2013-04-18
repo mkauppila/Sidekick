@@ -12,4 +12,11 @@
 
 - (NSDate *)dateAsMidnight;
 
+/**
+ 
+ 
+ @discussion Uses autoUpdatingCalendar, don't cache the result.
+ */
+- (BOOL)isSameDate:(NSDate *)date;
+
 @end
