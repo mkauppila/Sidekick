@@ -20,7 +20,7 @@
 	return [calendar dateFromComponents:components];
 }
 
-- (BOOL)isSameDate:(NSDate *)date
+- (BOOL)isSameDay:(NSDate *)date
 {
 	const NSUInteger dateComponentFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
 	NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];

@@ -17,6 +17,6 @@
  
  @discussion Uses autoUpdatingCalendar, don't cache the result.
  */
-- (BOOL)isSameDate:(NSDate *)date;
+- (BOOL)isSameDay:(NSDate *)date;
 
 @end
