@@ -22,6 +22,7 @@
 		288876571719CDAB00DE7C72 /* ArrayTest.m in Resources */ = {isa = PBXBuildFile; fileRef = 288876561719CDAB00DE7C72 /* ArrayTest.m */; };
 		288876581719CDBD00DE7C72 /* ArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 288876561719CDAB00DE7C72 /* ArrayTest.m */; };
 		2888765A1719D3B400DE7C72 /* MacrosTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 288876591719D3B400DE7C72 /* MacrosTest.m */; };
+		2888765C17218DA500DE7C72 /* StringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2888765B17218DA500DE7C72 /* StringTest.m */; };
 		28C2FCC717196762006F462D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2FCC617196762006F462D /* UIKit.framework */; };
 		28C2FCC917196762006F462D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2FCC817196762006F462D /* Foundation.framework */; };
 		28C2FCCB17196762006F462D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2FCCA17196762006F462D /* CoreGraphics.framework */; };
@@ -52,6 +53,7 @@
 		2888764F1719CC1D00DE7C72 /* UIView+Sidekick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Sidekick.m"; sourceTree = "<group>"; };
 		288876561719CDAB00DE7C72 /* ArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayTest.m; sourceTree = "<group>"; };
 		288876591719D3B400DE7C72 /* MacrosTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacrosTest.m; sourceTree = "<group>"; };
+		2888765B17218DA500DE7C72 /* StringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringTest.m; sourceTree = "<group>"; };
 		28C2FCC317196762006F462D /* Sidekick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sidekick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C2FCC617196762006F462D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28C2FCC817196762006F462D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				288876561719CDAB00DE7C72 /* ArrayTest.m */,
+				2888765B17218DA500DE7C72 /* StringTest.m */,
 				288876591719D3B400DE7C72 /* MacrosTest.m */,
 				2888762B1719B3B500DE7C72 /* Supporting files */,
 			);
@@ -244,6 +247,7 @@
 				288876551719CC1D00DE7C72 /* UIView+Sidekick.m in Sources */,
 				288876581719CDBD00DE7C72 /* ArrayTest.m in Sources */,
 				2888765A1719D3B400DE7C72 /* MacrosTest.m in Sources */,
+				2888765C17218DA500DE7C72 /* StringTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
