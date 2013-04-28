@@ -24,17 +24,4 @@
 	return snapshotImage;
 }
 
-- (void)setOriginY:(CGFloat)newOriginY
-{
-	
-}
-
-
-- (void)setHeight:(CGFloat)newHeight
-{
-	CGRect frame = self.frame;
-	frame.size.height = newHeight;
-	self.frame = frame;
-}
-
 @end

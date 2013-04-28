@@ -23,15 +23,4 @@
  */
 - (UIImage *)snapshot;
 
-/**
- Sets the new origin Y value for the v
- */
-- (void)setOriginY:(CGFloat)newOriginY;
-
-/**
- Sets the height of the view.
- @param newHeight new height of the view
- */
-- (void)setHeight:(CGFloat)newHeight;
-
 @end
