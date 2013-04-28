@@ -10,6 +10,16 @@
 
 @implementation NSDate (Sidekick)
 
+// http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html
++ (NSDate *)dateFromHttpDate:(NSString *)dateString
+{
+	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+	dateFormatter.dateFormat = @"EEE, dd MMM yyyy HH:mm:ss z";
+	dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+	dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
+	return [dateFormatter dateFromString:dateString];
+}
+
 - (NSDate *)dateAsMidnight
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];

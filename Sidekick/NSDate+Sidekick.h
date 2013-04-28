@@ -10,6 +10,8 @@
 
 @interface NSDate (Sidekick)
 
++ (NSDate *)dateFromHttpDate:(NSString *)dateString;
+
 - (NSDate *)dateAsMidnight;
 
 /**
