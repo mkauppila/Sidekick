@@ -108,6 +108,7 @@
 		288876411719CC1D00DE7C72 /* Sidekick */ = {
 			isa = PBXGroup;
 			children = (
+				2888764B1719CC1D00DE7C72 /* Sidekick.h */,
 				288876421719CC1D00DE7C72 /* Functions.h */,
 				288876431719CC1D00DE7C72 /* Functions.m */,
 				288876441719CC1D00DE7C72 /* Macros.h */,
@@ -117,7 +118,6 @@
 				288876481719CC1D00DE7C72 /* NSDate+Sidekick.m */,
 				288876491719CC1D00DE7C72 /* NSString+Sidekick.h */,
 				2888764A1719CC1D00DE7C72 /* NSString+Sidekick.m */,
-				2888764B1719CC1D00DE7C72 /* Sidekick.h */,
 				2888764C1719CC1D00DE7C72 /* UIColor+Sidekick.h */,
 				2888764D1719CC1D00DE7C72 /* UIColor+Sidekick.m */,
 				2888764E1719CC1D00DE7C72 /* UIView+Sidekick.h */,
