@@ -12,11 +12,19 @@
 
 + (NSDate *)dateFromHttpDate:(NSString *)dateString;
 
-- (NSDate *)dateAsMidnight;
+- (NSInteger)year;
+- (NSInteger)month;
+- (NSInteger)day;
+- (NSInteger)hour;
+- (NSInteger)minute;
+- (NSInteger)second;
+
+- (NSDateComponents *)standardDateComponents;
+
+- (NSDate *)dateAsMidnight; // dateAsNextMidnight
+// TODO: dateAsPreviousMidnihght
 
 /**
- 
- 
  @discussion Uses autoUpdatingCalendar, don't cache the result.
  */
 - (BOOL)isSameDay:(NSDate *)date;

@@ -53,6 +53,25 @@
 	GHAssertEquals(components.second, 31, @"Seconds should be 31");
 }
 
+- (void)testSingleDateComponentHelpers
+{
+	NSDateComponents *components = [[NSDateComponents alloc] init];
+	components.year = 2010;
+	components.month = 3;
+	components.day = 20;
+	components.hour = 11;
+	components.minute = 44;
+	components.second = 30;
+	NSDate *date = [[NSCalendar currentCalendar] dateFromComponents:components];
+	
+	GHAssertEquals(date.year,   2010, nil);
+	GHAssertEquals(date.month,  3,    nil);
+	GHAssertEquals(date.day,    20,   nil);
+	GHAssertEquals(date.hour,   11,   nil);
+	GHAssertEquals(date.minute, 44,   nil);
+	GHAssertEquals(date.second, 30,   nil);
+}
+
 #pragma mark - helpers
 
 - (NSDate *)dateFromYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day

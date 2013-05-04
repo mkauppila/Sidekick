@@ -20,6 +20,53 @@
 	return [dateFormatter dateFromString:dateString];
 }
 
+#pragma mark - Methods per date component
+
+- (NSInteger)year
+{
+	NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self];
+	return components.year;
+}
+
+- (NSInteger)month
+{
+	NSDateComponents *components = [[NSCalendar currentCalendar] components:NSMonthCalendarUnit fromDate:self];
+	return components.month;
+}
+
+- (NSInteger)day
+{
+	NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit fromDate:self];
+	return components.day;
+}
+
+- (NSInteger)hour
+{
+	NSDateComponents *components = [[NSCalendar currentCalendar] components:NSHourCalendarUnit fromDate:self];
+	return components.hour;
+}
+
+- (NSInteger)minute
+{
+	NSDateComponents *components = [[NSCalendar currentCalendar] components:NSMinuteCalendarUnit fromDate:self];
+	return components.minute;
+}
+
+- (NSInteger)second
+{
+	NSDateComponents *components = [[NSCalendar currentCalendar] components:NSSecondCalendarUnit fromDate:self];
+	return components.second;
+}
+
+#pragma mark -
+
+- (NSDateComponents *)standardDateComponents
+{
+	const NSUInteger components = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit |
+								  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
+	return [[NSCalendar currentCalendar] components:components fromDate:self];
+}
+
 - (NSDate *)dateAsMidnight
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
