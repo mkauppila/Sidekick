@@ -10,7 +10,6 @@
 
 @implementation NSDate (Sidekick)
 
-// http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html
 + (NSDate *)dateFromHttpDate:(NSString *)dateString
 {
 	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];

@@ -12,7 +12,6 @@
 
 /**
  Returns the object from the array with lowest index value.
- 
  @return first object of the array or nil on failure
  */
 - (id)firstObject;

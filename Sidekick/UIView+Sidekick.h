@@ -8,13 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-/**
- TODO:
-	- Add more convenient setters
- 
-   Remove all convenience setters/getters, I've never really used those
- */
-
 @interface UIView (Sidekick)
 
 /**
