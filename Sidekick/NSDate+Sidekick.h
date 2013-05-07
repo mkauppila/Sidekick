@@ -67,4 +67,13 @@
  */
 - (BOOL)isSameDay:(NSDate *)date;
 
+/**
+ Create string representation of the date in given format.
+ @return String representation of the date in the given date format
+ 
+ @see [Date format patterns](http://unicode.org/reports/tr35/tr35-6.html#Date_Format_Patterns) for
+	  formatting options.
+ */
+- (NSString *)dateFormattedAs:(NSString *)dateFormat;
+
 @end

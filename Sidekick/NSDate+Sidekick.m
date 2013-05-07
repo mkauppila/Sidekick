@@ -87,4 +87,11 @@
 	return left.year == right.year && left.month == right.month && left.day == right.day;
 }
 
+- (NSString *)dateFormattedAs:(NSString *)dateFormat
+{
+	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+	formatter.dateFormat = dateFormat;
+	return [formatter stringFromDate:self];
+}
+
 @end
