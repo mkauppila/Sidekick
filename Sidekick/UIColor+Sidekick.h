@@ -32,4 +32,20 @@
  */
 + (UIColor *)colorWithHex:(NSString *)hexString;
 
+/**
+ Create color from RGB integers.
+ */
++ (UIColor *)colorWithIntegerRed:(NSUInteger)red
+					green:(NSUInteger)green
+					 blue:(NSUInteger)blue;
+
+/**
+ Create color from RGBA integers.
+ */
++ (UIColor *)colorWithIntegerRed:(NSUInteger)red
+					green:(NSUInteger)green
+					 blue:(NSUInteger)blue
+					alpha:(NSUInteger)alpha;
+
+
 @end
