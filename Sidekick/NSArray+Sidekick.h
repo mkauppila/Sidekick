@@ -30,4 +30,10 @@
  */
 - (id)firstObject;
 
+/**
+ Check if array is empty.
+ @return YES if array is indeed empty, otherwise NO
+ */
+- (BOOL)isEmpty;
+
 @end
