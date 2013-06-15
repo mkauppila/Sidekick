@@ -37,4 +37,15 @@
 	GHAssertEqualStrings([array firstObject], @"first", @"Should match the first item of array");
 }
 
+- (void)testIsEmpty
+{
+	NSArray *emptyArray = [NSArray array];
+	GHAssertTrue([emptyArray isEmpty], @"Just created array ought to be empty");
+	
+	NSMutableArray *mutableEmptyArray = [NSMutableArray array];
+	GHAssertTrue([mutableEmptyArray isEmpty], @"Just created mutable array ought to be empty");
+	[mutableEmptyArray addObject:@(1)];
+	GHAssertFalse([mutableEmptyArray isEmpty], @"Array should have one element");
+}
+
 @end
