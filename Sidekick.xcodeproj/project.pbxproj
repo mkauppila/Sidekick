@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2864A53A1780B75C004E0525 /* ColorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2864A5391780B75C004E0525 /* ColorTest.m */; };
 		288876251719B38900DE7C72 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2888761C1719B38900DE7C72 /* Default-568h@2x.png */; };
 		288876261719B38900DE7C72 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2888761D1719B38900DE7C72 /* Default.png */; };
 		288876271719B38900DE7C72 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2888761E1719B38900DE7C72 /* Default@2x.png */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2864A5391780B75C004E0525 /* ColorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorTest.m; sourceTree = "<group>"; };
 		2888761C1719B38900DE7C72 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2888761D1719B38900DE7C72 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2888761E1719B38900DE7C72 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				2888765B17218DA500DE7C72 /* StringTest.m */,
 				288876591719D3B400DE7C72 /* MacrosTest.m */,
 				288876601721A8F000DE7C72 /* DateTest.m */,
+				2864A5391780B75C004E0525 /* ColorTest.m */,
 				2888762B1719B3B500DE7C72 /* Supporting files */,
 			);
 			path = Tests;
@@ -252,6 +255,7 @@
 				2888765A1719D3B400DE7C72 /* MacrosTest.m in Sources */,
 				2888765C17218DA500DE7C72 /* StringTest.m in Sources */,
 				288876611721A8F000DE7C72 /* DateTest.m in Sources */,
+				2864A53A1780B75C004E0525 /* ColorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
