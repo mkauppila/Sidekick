@@ -58,10 +58,10 @@ typedef unsigned long ulong;
 	CGFloat green = ((rgba >> 16) & 255) / 255.0f;
 	CGFloat blue  = ((rgba >> 8) & 255) / 255.0f;
 	CGFloat alpha = (rgba & 255) / 255.0f;
-	return [UIColor colorWithIntegerRed:red
+	return [UIColor colorWithRed:red
 						   green:green
 							blue:blue
-						   alpha:alpha];	
+						   alpha:alpha];
 }
 
 + (UIColor *)colorWithIntegerRed:(NSUInteger)red
