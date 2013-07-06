@@ -31,10 +31,24 @@
 
 - (BOOL)shouldRunOnMainThread { return NO; }
 
-- (void)testCreateWithHex
+- (void)testCreateWithHexNoAlpha
 {
 	UIColor *newColor = [UIColor colorWithHex:@"FFFFFF"];
 
+	CGFloat red, green, blue, alpha;
+	BOOL didConvert = [newColor getRed:&red green:&green blue:&blue alpha:&alpha];
+	GHAssertTrue(didConvert, @"Color couldn't be converted to RGB format");
+	
+	GHAssertEquals(red,   1.0f, @"Color is white, so red component needs to be 1.0f");
+	GHAssertEquals(green, 1.0f, @"Color is white, so green component needs to be 1.0f");
+	GHAssertEquals(blue,  1.0f, @"Color is white, so blue component needs to be 1.0f");
+	GHAssertEquals(alpha, 1.0f, @"Created from RGB integers, so alpha defaults to 1.0f");
+}
+
+- (void)testCreateFromHexWithAlpha
+{
+	UIColor *newColor = [UIColor colorWithHex:@"FFFFFFFF"];
+	
 	CGFloat red, green, blue, alpha;
 	BOOL didConvert = [newColor getRed:&red green:&green blue:&blue alpha:&alpha];
 	GHAssertTrue(didConvert, @"Color couldn't be converted to RGB format");
