@@ -26,10 +26,11 @@
 #pragma mark - Device support
 
 BOOL IS_IPHONE(void) { return [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone; }
-BOOL IS_IPHONE5(void) { return IS_IPHONE() && [UIScreen mainScreen]. bounds.size.height == 568.0f; }
+BOOL IS_IPHONE5(void) { return IS_IPHONE() && [UIScreen mainScreen].bounds.size.height == 568.0f; }
 BOOL IS_IPAD(void) { return [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad; }
 
 BOOL HAS_RETINA_DISPLAY(void) { return [[UIScreen mainScreen] scale] == 2.0f; }
+BOOL HAS_FOUR_INCH_DISPLAY(void) { return [UIScreen mainScreen].bounds.size.height == 568.0f; }
 
 #pragma mark - Shorthands for paths
 

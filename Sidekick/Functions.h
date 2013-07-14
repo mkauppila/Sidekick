@@ -27,6 +27,7 @@ BOOL IS_IPHONE5(void);
 BOOL IS_IPAD(void);
 
 BOOL HAS_RETINA_DISPLAY(void);
+BOOL HAS_FOUR_INCH_DISPLAY(void);
 
 NSString *DocumentsPath(void);
 NSString *LibraryPath(void);
