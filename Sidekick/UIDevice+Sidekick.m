@@ -1,4 +1,4 @@
-//  Sidekick.h
+//  UIDevice+Sidekick.m
 //
 // Copyright (c) 2013 Markus Kauppila <markus.kauppila@gmail.com>
 //
@@ -20,13 +20,33 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "Macros.h"
-#import "Functions.h"
-
-#import "UIColor+Sidekick.h"
-#import "UIView+Sidekick.h"
-#import "NSArray+Sidekick.h"
-#import "NSString+Sidekick.h"
-#import "NSDate+Sidekick.h"
 #import "UIDevice+Sidekick.h"
 
+@implementation UIDevice (Sidekick)
+
+- (BOOL)isiPhone
+{
+	return [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone;
+}
+
+- (BOOL)isiPhone5
+{
+	return [self isiPhone] && [UIScreen mainScreen].bounds.size.height == 568.0f;
+}
+
+- (BOOL)isiPad
+{
+	return [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad;
+}
+
+- (BOOL)hasRetinaDisplay
+{
+	 return [[UIScreen mainScreen] scale] == 2.0f;
+}
+
+- (BOOL)hasFourInchDisplay
+{
+	return [UIScreen mainScreen].bounds.size.height == 568.0f;
+}
+
+@end

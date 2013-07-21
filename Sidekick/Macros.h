@@ -25,6 +25,12 @@
 
 #define clamp(value, minimum, maximum) (MIN(MAX((minimum), (value)), (maximum)))
 
+/** @title Common Constants **/
+
+const NSUInteger SECONDS_IN_HOUR = 60 * 60;
+const NSUInteger SECONDS_IN_DAY = SECONDS_IN_HOUR * 24;
+const NSUInteger SECONDS_IN_WEEK = SECONDS_IN_DAY * 7;
+
 /** @title Debug macros */
 
 // Copied from Cocoa Is My Girlfriend blog post

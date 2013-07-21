@@ -19,18 +19,11 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
+
 #import "Functions.h"
 
 #import "NSString+Sidekick.h"
-
-#pragma mark - Device support
-
-BOOL IS_IPHONE(void) { return [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone; }
-BOOL IS_IPHONE5(void) { return IS_IPHONE() && [UIScreen mainScreen].bounds.size.height == 568.0f; }
-BOOL IS_IPAD(void) { return [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad; }
-
-BOOL HAS_RETINA_DISPLAY(void) { return [[UIScreen mainScreen] scale] == 2.0f; }
-BOOL HAS_FOUR_INCH_DISPLAY(void) { return [UIScreen mainScreen].bounds.size.height == 568.0f; }
+#import "UIDevice+Sidekick.h"
 
 #pragma mark - Shorthands for paths
 
@@ -66,7 +59,7 @@ UIImage *ImageNamed(NSString *name)
 	
 	NSString *fullRetinaPath = [[NSString stringWithFormat:@"%@%@.%@", filename, @"@2x", path] asBundlePath];
 	BOOL retinaVersionExists = [[NSFileManager defaultManager] fileExistsAtPath:fullRetinaPath];
-	if (HAS_RETINA_DISPLAY() && retinaVersionExists) {
+	if ([[UIDevice currentDevice] hasRetinaDisplay] && retinaVersionExists) {
 		loadedImage = [UIImage imageWithContentsOfFile:fullRetinaPath];
 	}
 	
