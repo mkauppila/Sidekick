@@ -56,23 +56,21 @@
 {
 	NSString *httpDateString = @"Tue, 15 Nov 1994 08:12:31 GMT";
 	NSDate *date = [NSDate dateFromHttpDate:httpDateString];
-	GHTestLog(@"date: %@", date);
-	
-	// FIXME(mk): There's problem with time zone
-	//			  it'll parse it to match the current time zone, instead for GMT
 	
 	const NSUInteger componentFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit |
 									  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit |
 									  NSWeekdayCalendarUnit;
 
-	NSDateComponents *components = [[NSCalendar currentCalendar] components:componentFlags fromDate:date];
-	GHAssertEquals(components.weekday, 3, @"Week day should be tuesday");
-	GHAssertEquals(components.year, 1994, @"Year should be 1994");
-	GHAssertEquals(components.month, 11, @"Month should be November");
-	GHAssertEquals(components.day, 15, @"Day should be 15th");
-	GHAssertEquals(components.hour, 8, @"Hour should be 8");
-	GHAssertEquals(components.minute, 12, @"Minute should be 12");
-	GHAssertEquals(components.second, 31, @"Seconds should be 31");
+	NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	[calendar setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"GMT"]];
+	NSDateComponents *components = [calendar components:componentFlags fromDate:date];
+	GHAssertEquals(components.weekday, 3,    @"Week day should be tuesday");
+	GHAssertEquals(components.year,    1994, @"Year should be 1994");
+	GHAssertEquals(components.month,   11,   @"Month should be November");
+	GHAssertEquals(components.day,     15,   @"Day should be 15th");
+	GHAssertEquals(components.hour,    8,    @"Hour should be 8");
+	GHAssertEquals(components.minute,  12,   @"Minute should be 12");
+	GHAssertEquals(components.second,  31,   @"Seconds should be 31");
 }
 
 - (void)testSingleDateComponentHelpers
