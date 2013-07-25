@@ -27,9 +27,9 @@
 
 /** @title Common Constants **/
 
-const NSUInteger SECONDS_IN_HOUR = 60 * 60;
-const NSUInteger SECONDS_IN_DAY = SECONDS_IN_HOUR * 24;
-const NSUInteger SECONDS_IN_WEEK = SECONDS_IN_DAY * 7;
+#define SECONDS_IN_HOUR (60 * 60)
+#define SECONDS_IN_DAY = (60 * 60 * 24)
+#define SECONDS_IN_WEEK (60 * 60 * 24 * 7)
 
 /** @title Debug macros */
 
