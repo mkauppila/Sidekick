@@ -24,34 +24,35 @@
 
 @interface NSString (Sidekick)
 
-/*! 
+/**
  Creates string representing the self as path in documents
  path.
  */
 - (NSString *)asDocumentsPath;
 
-/*!
+/**
  Creates string representing the self as path in app's library
  path.
  */
 - (NSString *)asLibraryPath;
 
-/*!
+/**
  Creates string representing the self as path in bundle
  path.
  */
 - (NSString *)asBundlePath;
 
-/*!
+/**
  Creates string representing the self as path in documents
- path with the given extension. Usage:
+ path with the given extension. 
+ Usage:
 	[hello asDocumentsPathWithExtension:@"txt"]
  
  @param extension Desired file extension (ie. png)
  */
 - (NSString *)asDocumentsPathWithExtension:(NSString *)extension;
 
-/*!
+/**
  Creates string representing the self as path in library
  path with the given extension. Usage:
  [hello asDocumentsPathWithExtension:@"txt"]
