@@ -24,11 +24,37 @@
 
 @interface UIDevice (Sidekick)
 
+/**
+ Determine if the device is iPhone.
+ @return YES if the device is iPhone, otherwise NO
+ */
 - (BOOL)isiPhone;
+
+/**
+ Determine if the device is iPhone 5.
+ @return YES if the device is iPhone 5, otherwise NO
+ */
 - (BOOL)isiPhone5;
+
+/**
+ Determine if the device is iPad.
+ @return YES if the device is iPad, otherwise NO
+ */
 - (BOOL)isiPad;
 
+
+/**
+ Determine whether or not the device has retina display
+ @return YES if it has retina, otherwise NO
+ */
 - (BOOL)hasRetinaDisplay;
+
+/**
+ Whether or not the device has 4 inch display. Note only
+ use this if the device is iPhone.
+
+ @return YES if it has retina, otherwise NO
+ */
 - (BOOL)hasFourInchDisplay;
 
 @end
