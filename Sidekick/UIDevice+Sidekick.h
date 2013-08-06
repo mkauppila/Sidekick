@@ -42,7 +42,6 @@
  */
 - (BOOL)isiPad;
 
-
 /**
  Determine whether or not the device has retina display
  @return YES if it has retina, otherwise NO
@@ -53,8 +52,11 @@
  Whether or not the device has 4 inch display. Note only
  use this if the device is iPhone.
 
+ This is deprecated since isiPhone5 does the same thing, but 
+ it is less error prone and confusing.
+ 
  @return YES if it has retina, otherwise NO
  */
-- (BOOL)hasFourInchDisplay;
+- (BOOL)hasFourInchDisplay __attribute__((deprecated));
 
 @end
