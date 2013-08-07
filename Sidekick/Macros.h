@@ -25,13 +25,13 @@
 
 #define clamp(value, minimum, maximum) (MIN(MAX((minimum), (value)), (maximum)))
 
-/** @title Common Constants **/
+/// @name Common Constants
 
 #define SECONDS_IN_HOUR (60 * 60)
 #define SECONDS_IN_DAY  (60 * 60 * 24)
 #define SECONDS_IN_WEEK (60 * 60 * 24 * 7)
 
-/** @title Debug macros */
+/// @name Debug macros
 
 // Copied from Cocoa Is My Girlfriend blog post
 // (http://www.cimgf.com/2010/05/02/my-current-prefix-pch-file/)
@@ -48,8 +48,8 @@
 #define ZAssert(condition, ...) do { if (!(condition)) { ALog(__VA_ARGS__); }} while(0)
 
 
-/** @title Threading macros */
-/** Assert macros only work within objective-c methods **/
+/// @name Threading macros
+/// Assert macros only work within objective-c methods
 
 #ifdef DEBUG
 #define AssertIsMainThread()  \
