@@ -19,6 +19,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
+
 #import <UIKit/UIKit.h>
 
 @interface UIColor (Sidekick)
@@ -34,6 +35,11 @@
 
 /**
  Create color from RGB integers.
+
+ @param red Red component of color in range [0, 255]
+ @param green Green component of color in range [0, 255]
+ @param blue Blue component of color in range [0, 255]
+ @return The specified color
  */
 + (UIColor *)colorWithIntegerRed:(NSUInteger)red
 					green:(NSUInteger)green
@@ -41,6 +47,12 @@
 
 /**
  Create color from RGBA integers.
+ 
+ @param red Red component of color in range [0, 255] 
+ @param green Green component of color in range [0, 255] 
+ @param blue Blue component of color in range [0, 255] 
+ @param alpha Alpha component of color in range [0, 255]
+ @return The specified color
  */
 + (UIColor *)colorWithIntegerRed:(NSUInteger)red
 					green:(NSUInteger)green
