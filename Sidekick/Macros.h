@@ -28,7 +28,7 @@
 /** @title Common Constants **/
 
 #define SECONDS_IN_HOUR (60 * 60)
-#define SECONDS_IN_DAY = (60 * 60 * 24)
+#define SECONDS_IN_DAY  (60 * 60 * 24)
 #define SECONDS_IN_WEEK (60 * 60 * 24 * 7)
 
 /** @title Debug macros */
