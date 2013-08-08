@@ -20,6 +20,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+/**
+ Sidekick's internal log macro. Only for debugging the framework.
+ */
+#if DEBUG
+#define SKLog(...) NSLog(@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__])
+#elif
+#define SKLog(...) do {} while(0)
+#endif
+
 #import "Macros.h"
 #import "Functions.h"
 
