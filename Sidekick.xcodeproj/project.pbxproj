@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2861AB1417B6DA92007F948C /* NSMutableArray+Sidekick.m in Sources */ = {isa = PBXBuildFile; fileRef = 2861AB1317B6DA92007F948C /* NSMutableArray+Sidekick.m */; };
+		2861AB1617B6DADD007F948C /* MutableArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2861AB1517B6DADD007F948C /* MutableArrayTest.m */; };
 		2864A53A1780B75C004E0525 /* ColorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2864A5391780B75C004E0525 /* ColorTest.m */; };
 		288059A1179C5AD900D38CF0 /* UIDevice+Sidekick.m in Sources */ = {isa = PBXBuildFile; fileRef = 288059A0179C5AD900D38CF0 /* UIDevice+Sidekick.m */; };
 		288876251719B38900DE7C72 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2888761C1719B38900DE7C72 /* Default-568h@2x.png */; };
@@ -33,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2861AB1217B6DA92007F948C /* NSMutableArray+Sidekick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Sidekick.h"; sourceTree = "<group>"; };
+		2861AB1317B6DA92007F948C /* NSMutableArray+Sidekick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Sidekick.m"; sourceTree = "<group>"; };
+		2861AB1517B6DADD007F948C /* MutableArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableArrayTest.m; sourceTree = "<group>"; };
 		2864A5391780B75C004E0525 /* ColorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorTest.m; sourceTree = "<group>"; };
 		2880599F179C5AD900D38CF0 /* UIDevice+Sidekick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Sidekick.h"; sourceTree = "<group>"; };
 		288059A0179C5AD900D38CF0 /* UIDevice+Sidekick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Sidekick.m"; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 		288876191719B38900DE7C72 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2861AB1517B6DADD007F948C /* MutableArrayTest.m */,
 				288876561719CDAB00DE7C72 /* ArrayTest.m */,
 				2888765B17218DA500DE7C72 /* StringTest.m */,
 				288876591719D3B400DE7C72 /* MacrosTest.m */,
@@ -130,6 +136,8 @@
 				2888764F1719CC1D00DE7C72 /* UIView+Sidekick.m */,
 				2880599F179C5AD900D38CF0 /* UIDevice+Sidekick.h */,
 				288059A0179C5AD900D38CF0 /* UIDevice+Sidekick.m */,
+				2861AB1217B6DA92007F948C /* NSMutableArray+Sidekick.h */,
+				2861AB1317B6DA92007F948C /* NSMutableArray+Sidekick.m */,
 			);
 			path = Sidekick;
 			sourceTree = "<group>";
@@ -262,6 +270,8 @@
 				2888765C17218DA500DE7C72 /* StringTest.m in Sources */,
 				288876611721A8F000DE7C72 /* DateTest.m in Sources */,
 				2864A53A1780B75C004E0525 /* ColorTest.m in Sources */,
+				2861AB1417B6DA92007F948C /* NSMutableArray+Sidekick.m in Sources */,
+				2861AB1617B6DADD007F948C /* MutableArrayTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
