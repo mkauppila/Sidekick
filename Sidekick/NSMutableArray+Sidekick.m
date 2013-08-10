@@ -24,4 +24,11 @@
 
 @implementation NSMutableArray (Sidekick)
 
+- (void)insertObjects:(NSArray *)objects startingAtIndex:(NSUInteger)idx
+{
+	for (id item in objects.reverseObjectEnumerator) {
+		[self insertObject:item atIndex:idx];
+	}
+}
+
 @end

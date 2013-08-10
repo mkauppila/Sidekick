@@ -24,4 +24,11 @@
 
 @interface NSMutableArray (Sidekick)
 
+/**
+ Inserts the the `objects` from to the array by starting from the index
+ @param objects Objects to be inserted in the mutable array
+ @param idx Starting index for insertion
+ */
+- (void)insertObjects:(NSArray *)objects startingAtIndex:(NSUInteger)idx;
+
 @end
