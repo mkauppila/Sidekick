@@ -31,9 +31,14 @@
 
 - (BOOL)shouldRunOnMainThread { return NO; }
 
-- (void)testFirstObject
+- (void)testInsertObjectsStartingFromIndex
 {
-	//NSMutableArray *array = [NSMutableArray array];
+	NSMutableArray *array =  [@[@1, @4, @5] mutableCopy];
+	[array insertObjects:@[@2, @3] startingAtIndex:1];
+	
+	GHAssertTrue([array count] == 5, @"Array's count should be 5");
+	// Add something like this, but make it work
+    // GHAssertEquals(array, @[@1, @2, @3, @4, @5], @"Array's match");
 }
 
 @end
