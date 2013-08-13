@@ -28,7 +28,7 @@
 	for (UIView *shadowView in [self.scrollView subviews])
 	{
 		if ([shadowView isKindOfClass:[UIImageView class]]) {
-			[shadowView setHidden:showShadows];
+			[shadowView setHidden:!showShadows];
 		}
 	}
 }
