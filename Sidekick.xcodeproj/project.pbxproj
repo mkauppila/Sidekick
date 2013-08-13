@@ -31,6 +31,7 @@
 		28C2FCC717196762006F462D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2FCC617196762006F462D /* UIKit.framework */; };
 		28C2FCC917196762006F462D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2FCC817196762006F462D /* Foundation.framework */; };
 		28C2FCCB17196762006F462D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2FCCA17196762006F462D /* CoreGraphics.framework */; };
+		28EB28FA17BA686800D79354 /* UIWebView+Sidekick.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EB28F917BA686800D79354 /* UIWebView+Sidekick.m */; };
 		B93C285D21A7458DBD6BD344 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7D85E636164614B9AAA307 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,8 @@
 		28C2FCC617196762006F462D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28C2FCC817196762006F462D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28C2FCCA17196762006F462D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28EB28F817BA686800D79354 /* UIWebView+Sidekick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Sidekick.h"; sourceTree = "<group>"; };
+		28EB28F917BA686800D79354 /* UIWebView+Sidekick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Sidekick.m"; sourceTree = "<group>"; };
 		4C6AD08286DD48A88CDB243B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		AF7D85E636164614B9AAA307 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -138,6 +141,8 @@
 				288059A0179C5AD900D38CF0 /* UIDevice+Sidekick.m */,
 				2861AB1217B6DA92007F948C /* NSMutableArray+Sidekick.h */,
 				2861AB1317B6DA92007F948C /* NSMutableArray+Sidekick.m */,
+				28EB28F817BA686800D79354 /* UIWebView+Sidekick.h */,
+				28EB28F917BA686800D79354 /* UIWebView+Sidekick.m */,
 			);
 			path = Sidekick;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				2864A53A1780B75C004E0525 /* ColorTest.m in Sources */,
 				2861AB1417B6DA92007F948C /* NSMutableArray+Sidekick.m in Sources */,
 				2861AB1617B6DADD007F948C /* MutableArrayTest.m in Sources */,
+				28EB28FA17BA686800D79354 /* UIWebView+Sidekick.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
