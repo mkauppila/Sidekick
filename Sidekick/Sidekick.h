@@ -38,4 +38,5 @@
 #import "NSString+Sidekick.h"
 #import "NSDate+Sidekick.h"
 #import "UIDevice+Sidekick.h"
+#import "UIWebView+Sidekick.h"
 
