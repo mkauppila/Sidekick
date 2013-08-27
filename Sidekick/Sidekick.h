@@ -25,7 +25,7 @@
  */
 #if DEBUG
 #define SKLog(...) NSLog(@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__])
-#elif
+#else
 #define SKLog(...) do {} while(0)
 #endif
 
