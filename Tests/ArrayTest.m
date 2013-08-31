@@ -48,4 +48,21 @@
 	GHAssertFalse([mutableEmptyArray isEmpty], @"Array should have one element");
 }
 
+- (void)testMap
+{
+	NSArray *array = @[@1, @2, @3, @4];
+	NSArray *correctResult = @[@1, @4, @9, @16];
+	
+	NSArray *result = [array map:^id(id value) {
+		return @([value integerValue] * [value integerValue]);
+	}];
+
+	GHAssertEquals(array.count, result.count, @"Count of array should say the same");
+	for (NSUInteger counter = 0; counter < result.count; ++counter) {
+		GHAssertEqualObjects([correctResult objectAtIndex:counter],
+							 [result objectAtIndex:counter],
+							 @"Elements should match");
+	}
+}
+
 @end
