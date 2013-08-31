@@ -35,5 +35,14 @@
 
 - (BOOL)isEmpty { return self.count == 0 ? YES : NO; }
 
+- (NSArray *)map:(id (^)(id value))block
+{
+	NSMutableArray *array = [NSMutableArray array];
+	for (id element in self) {
+		[array addObject:block(element)];
+	}
+	
+	return array;
+}
 
 @end

@@ -36,4 +36,7 @@
  */
 - (BOOL)isEmpty;
 
+
+- (NSArray *)map:(id (^)(id value))block;
+
 @end
