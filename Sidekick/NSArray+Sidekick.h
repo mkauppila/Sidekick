@@ -39,4 +39,6 @@
 
 - (NSArray *)map:(id (^)(id value))block;
 
+- (NSArray *)filteredArrayUsingBlock:(BOOL (^)(id value))block;
+
 @end

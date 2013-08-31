@@ -45,4 +45,16 @@
 	return array;
 }
 
+- (NSArray *)filteredArrayUsingBlock:(BOOL (^)(id value))block
+{
+	NSMutableArray *array = [NSMutableArray array];
+	for (id element in self) {
+		if (block(element)) {
+			[array addObject:element];
+		}
+	}
+	
+	return array;
+}
+
 @end
