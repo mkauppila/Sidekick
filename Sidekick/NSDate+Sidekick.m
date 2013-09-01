@@ -22,6 +22,8 @@
 
 #import "NSDate+Sidekick.h"
 
+#import "Macros.h"
+
 @implementation NSDate (Sidekick)
 
 + (NSDate *)dateFromHttpDate:(NSString *)dateString
@@ -106,6 +108,38 @@
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 	formatter.dateFormat = dateFormat;
 	return [formatter stringFromDate:self];
+}
+
+#pragma mark - 
+
++ (NSDate *)today
+{
+	return [NSDate date];
+}
+
++ (NSDate *)yesterday
+{
+	return [NSDate dateWithTimeIntervalSinceNow:-SECONDS_IN_DAY];
+}
+
++ (NSDate *)tomorrow
+{
+	return [NSDate dateWithTimeIntervalSinceNow:SECONDS_IN_DAY];
+}
+
+- (BOOL)isToday
+{
+	return [self isSameDay:[NSDate today]];
+}
+
+- (BOOL)isTomorrow
+{
+	return [self isSameDay:[NSDate tomorrow]];
+}
+
+- (BOOL)isYesterday
+{
+	return [self isSameDay:[NSDate yesterday]];
 }
 
 @end

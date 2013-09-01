@@ -90,4 +90,13 @@
  */
 - (NSString *)dateFormattedAs:(NSString *)dateFormat;
 
+/**
+ Same as [NSDate date] just more convienient name
+ */
++ (NSDate *)today;
+
+- (BOOL)isToday;
+- (BOOL)isTomorrow;
+- (BOOL)isYesterday;
+
 @end
