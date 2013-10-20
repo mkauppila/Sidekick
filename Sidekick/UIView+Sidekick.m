@@ -38,4 +38,13 @@
 	return snapshotImage;
 }
 
+- (void)moveFrameBy:(CGPoint)movement
+{
+	CGRect frame = self.frame;
+	frame.origin.x += movement.x;
+	frame.origin.y += movement.y;
+	
+	[self setFrame:frame];
+}
+
 @end

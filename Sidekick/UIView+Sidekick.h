@@ -30,4 +30,6 @@
  */
 - (UIImage *)snapshot;
 
+- (void)moveFrameBy:(CGPoint)movement;
+
 @end
