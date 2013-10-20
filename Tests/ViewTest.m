@@ -36,7 +36,7 @@
 - (void)setUp
 {
 	self.originalFrame = CGRectMake(0.0f, 0.0f, 100.0f, 100.0f);
-	self.testView = [[UIView alloc] initWithFrame:CGRectZero];
+	self.testView = [[UIView alloc] initWithFrame:self.originalFrame];
 }
 
 - (void)tearDown 
