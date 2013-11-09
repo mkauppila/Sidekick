@@ -12,6 +12,12 @@
 int main(int argc, char *argv[])
 {
 	@autoreleasepool {
-	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([GHUnitIOSAppDelegate class]));
+		int retVal = 0;
+		if (getenv("GHUNIT_CLI")) {
+			retVal = [GHTestRunner run];
+		} else {
+			retVal = UIApplicationMain(argc, argv, nil, @"GHUnitIOSAppDelegate");
+		}
+		return retVal;
 	}
 }
