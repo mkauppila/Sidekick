@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <GHUnitIOS/GHUnit.h> 
+#import <GHUnit.h> 
 
 #import "NSArray+Sidekick.h"
 
