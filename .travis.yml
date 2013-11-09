@@ -1,1 +1,2 @@
 language: objective-c
+script: GHUNIT_CLI=1 xctool -workspace Sidekick.xcworkspace/ -scheme Sidekick -configuration Debug -sdk iphonesimulator
