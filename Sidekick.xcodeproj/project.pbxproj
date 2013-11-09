@@ -191,6 +191,7 @@
 				28C2FCC017196761006F462D /* Frameworks */,
 				28C2FCC117196761006F462D /* Resources */,
 				13DC62C3C9F441B99FA9595D /* Copy Pods Resources */,
+				28186690182EAD1F005A24CA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -257,6 +258,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		28186690182EAD1F005A24CA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh Scripts/RunTests.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
