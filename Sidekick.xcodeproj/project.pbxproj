@@ -17,7 +17,6 @@
 		288876271719B38900DE7C72 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2888761E1719B38900DE7C72 /* Default@2x.png */; };
 		288876281719B38900DE7C72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2888761F1719B38900DE7C72 /* InfoPlist.strings */; };
 		288876291719B38900DE7C72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 288876211719B38900DE7C72 /* main.m */; };
-		2888762A1719B38900DE7C72 /* Sidekick-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 288876221719B38900DE7C72 /* Sidekick-Info.plist */; };
 		288876501719CC1D00DE7C72 /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 288876431719CC1D00DE7C72 /* Functions.m */; };
 		288876511719CC1D00DE7C72 /* NSArray+Sidekick.m in Sources */ = {isa = PBXBuildFile; fileRef = 288876461719CC1D00DE7C72 /* NSArray+Sidekick.m */; };
 		288876521719CC1D00DE7C72 /* NSDate+Sidekick.m in Sources */ = {isa = PBXBuildFile; fileRef = 288876481719CC1D00DE7C72 /* NSDate+Sidekick.m */; };
@@ -237,7 +236,6 @@
 				288876261719B38900DE7C72 /* Default.png in Resources */,
 				288876271719B38900DE7C72 /* Default@2x.png in Resources */,
 				288876281719B38900DE7C72 /* InfoPlist.strings in Resources */,
-				2888762A1719B38900DE7C72 /* Sidekick-Info.plist in Resources */,
 				288876571719CDAB00DE7C72 /* ArrayTest.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
