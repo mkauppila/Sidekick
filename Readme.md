@@ -1,5 +1,4 @@
-
-## Sidekick
+## Sidekick [![Build Status](https://travis-ci.org/mkauppila/Sidekick.png?branch=master)](https://travis-ci.org/mkauppila/Sidekick)
 
 Just scratching my own itch. Heavily work in progress utility framework
 for iOS. There's a lot to add, some to remove and much to polish.
