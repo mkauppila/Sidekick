@@ -28,6 +28,7 @@
 		2888765A1719D3B400DE7C72 /* MacrosTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 288876591719D3B400DE7C72 /* MacrosTest.m */; };
 		2888765C17218DA500DE7C72 /* StringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2888765B17218DA500DE7C72 /* StringTest.m */; };
 		288876611721A8F000DE7C72 /* DateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 288876601721A8F000DE7C72 /* DateTest.m */; };
+		289C7910186F568D006E77BC /* CGPointAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 289C790F186F568D006E77BC /* CGPointAdditions.m */; };
 		28C2FCC717196762006F462D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2FCC617196762006F462D /* UIKit.framework */; };
 		28C2FCC917196762006F462D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2FCC817196762006F462D /* Foundation.framework */; };
 		28C2FCCB17196762006F462D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2FCCA17196762006F462D /* CoreGraphics.framework */; };
@@ -68,6 +69,8 @@
 		288876591719D3B400DE7C72 /* MacrosTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacrosTest.m; sourceTree = "<group>"; };
 		2888765B17218DA500DE7C72 /* StringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringTest.m; sourceTree = "<group>"; };
 		288876601721A8F000DE7C72 /* DateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTest.m; sourceTree = "<group>"; };
+		289C790E186F568D006E77BC /* CGPointAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPointAdditions.h; sourceTree = "<group>"; };
+		289C790F186F568D006E77BC /* CGPointAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPointAdditions.m; sourceTree = "<group>"; };
 		28C2FCC317196762006F462D /* Sidekick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sidekick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C2FCC617196762006F462D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28C2FCC817196762006F462D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,6 +148,8 @@
 				2861AB1317B6DA92007F948C /* NSMutableArray+Sidekick.m */,
 				28EB28F817BA686800D79354 /* UIWebView+Sidekick.h */,
 				28EB28F917BA686800D79354 /* UIWebView+Sidekick.m */,
+				289C790E186F568D006E77BC /* CGPointAdditions.h */,
+				289C790F186F568D006E77BC /* CGPointAdditions.m */,
 			);
 			path = Sidekick;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				287E259B1813BD7D00C3C908 /* ViewTest.m in Sources */,
 				2888765A1719D3B400DE7C72 /* MacrosTest.m in Sources */,
 				2888765C17218DA500DE7C72 /* StringTest.m in Sources */,
+				289C7910186F568D006E77BC /* CGPointAdditions.m in Sources */,
 				288876611721A8F000DE7C72 /* DateTest.m in Sources */,
 				2864A53A1780B75C004E0525 /* ColorTest.m in Sources */,
 				2861AB1417B6DA92007F948C /* NSMutableArray+Sidekick.m in Sources */,
