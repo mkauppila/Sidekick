@@ -22,3 +22,21 @@
 
 #import "CGPointAdditions.h"
 
+CGPoint CGPointAdd(CGPoint p1, CGPoint p2)
+{
+	return CGPointZero;
+}
+
+CGPoint CGPointSubtract(CGPoint p1, CGPoint p2)
+{
+	return CGPointZero;
+}
+
+/**
+ Length of CGPoint when it represents a vector
+ */
+CGFloat CGPointLength(CGPoint p)
+{
+	return 0.0f;
+}
+

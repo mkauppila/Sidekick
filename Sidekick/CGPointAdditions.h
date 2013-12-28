@@ -22,3 +22,10 @@
 
 #import <Foundation/Foundation.h>
 
+CGPoint CGPointAdd(CGPoint p1, CGPoint p2);
+CGPoint CGPointSubtract(CGPoint p1, CGPoint p2);
+
+/**
+ Lenght of CGPoint when it represents a vector
+ */
+CGFloat CGPointLength(CGPoint p);
