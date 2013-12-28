@@ -22,6 +22,8 @@
 
 #import <GHUnit.h>
 
+#import "CGPointAdditions.h"
+
 @interface CGPointTest : GHTestCase { }
 @end
 
@@ -31,7 +33,32 @@
 
 - (void)testAddition
 {
+	CGPoint point1 = CGPointMake(1.0f, 1.0f);
+	CGPoint point2 = CGPointMake(2.0f, 1.5f);
+	CGPoint expected = CGPointMake(3.0f, 2.5f);
 	
+	CGPoint result = CGPointAdd(point1, point2);
+	
+	GHAssertTrue(CGPointEqualToPoint(result, expected), @"");
+}
+
+- (void)testSubtract
+{
+	CGPoint point1 = CGPointMake(3.0f, 2.0f);
+	CGPoint point2 = CGPointMake(1.0f, 1.5f);
+	CGPoint expected = CGPointMake(2.0f, 0.5f);
+	
+	CGPoint result = CGPointSubtract(point1, point2);
+	
+	GHAssertTrue(CGPointEqualToPoint(result, expected), @"");
+}
+
+- (void)testLength
+{
+	CGPoint point = CGPointMake(1.0f, 1.0f);
+	const CGFloat expected = 1.0f;
+	const CGFloat actual = CGPointLength(point);
+	GHAssertEquals(expected, actual, @"");
 }
 
 @end
