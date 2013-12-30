@@ -24,7 +24,8 @@
 
 CGPoint CGPointAdd(CGPoint p1, CGPoint p2)
 {
-	return CGPointZero;
+	return CGPointMake(p1.x + p2.x,
+					   p1.y + p2.y);
 }
 
 CGPoint CGPointSubtract(CGPoint p1, CGPoint p2)
