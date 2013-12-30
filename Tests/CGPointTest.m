@@ -53,6 +53,18 @@
 	GHAssertTrue(CGPointEqualToPoint(result, expected), @"");
 }
 
+- (void)testDividingByScalar
+{
+	CGPoint point = CGPointMake(4.0f, 2.0f);
+	const CGFloat divider = 2.0f;
+	CGPoint expected = CGPointMake(2.0f, 1.0f);
+	
+	CGPoint actual = CGPointDivide(point, divider);
+
+	GHAssertEquals(actual.x, expected.x, @"");
+	GHAssertEquals(actual.y, expected.y, @"");
+}
+
 - (void)testMultiplyingByScalar
 {
 	CGPoint point = CGPointMake(3.0f, 3.0f);

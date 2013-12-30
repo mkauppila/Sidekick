@@ -34,6 +34,10 @@ CGPoint CGPointSubtract(CGPoint p1, CGPoint p2)
 					   p1.y - p2.y);
 }
 
+CGPoint CGPointDivide(CGPoint point, CGFloat divider)
+{
+	return CGPointMake(point.x / divider, point.y / divider);
+}
 
 CGPoint CGPointMultiply(CGPoint point, CGFloat multiplier)
 {
