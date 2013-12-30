@@ -34,6 +34,11 @@ CGPoint CGPointSubtract(CGPoint p1, CGPoint p2)
 					   p1.y - p2.y);
 }
 
+
+CGPoint CGPointMultiply(CGPoint point, CGFloat multiplier)
+{
+	return CGPointMake(point.x * multiplier, point.y * multiplier);
+}
 /**
  Length of CGPoint when it represents a vector
  */

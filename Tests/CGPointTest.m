@@ -53,6 +53,17 @@
 	GHAssertTrue(CGPointEqualToPoint(result, expected), @"");
 }
 
+- (void)testMultiplyingByScalar
+{
+	CGPoint point = CGPointMake(3.0f, 3.0f);
+	const CGFloat multiplier = 2;
+	CGPoint expected = CGPointMake(6.0f, 6.0f);
+	
+	CGPoint actual = CGPointMultiply(point, multiplier);
+	GHAssertEquals(actual.x, expected.x, @"");
+	GHAssertEquals(actual.y, expected.y, @"");
+}
+
 - (void)testLength
 {
 	CGPoint point = CGPointMake(1.0f, 1.0f);

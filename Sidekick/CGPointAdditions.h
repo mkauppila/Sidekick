@@ -25,6 +25,7 @@
 CGPoint CGPointAdd(CGPoint p1, CGPoint p2);
 CGPoint CGPointSubtract(CGPoint p1, CGPoint p2);
 
+CGPoint CGPointMultiply(CGPoint point, CGFloat multiplier);
 /**
  Lenght of CGPoint when it represents a vector
  */
