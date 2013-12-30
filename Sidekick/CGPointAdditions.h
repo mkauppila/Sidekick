@@ -27,6 +27,13 @@ CGPoint CGPointSubtract(CGPoint p1, CGPoint p2);
 
 CGPoint CGPointDivide(CGPoint point, CGFloat divider);
 CGPoint CGPointMultiply(CGPoint point, CGFloat multiplier);
+
+/*
+ When CGPoint represents a vector, this'll return the unit vector
+ of the original.
+ */
+CGPoint CGPointNormalize(CGPoint point);
+
 /**
  Lenght of CGPoint when it represents a vector
  */

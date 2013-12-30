@@ -43,6 +43,13 @@ CGPoint CGPointMultiply(CGPoint point, CGFloat multiplier)
 {
 	return CGPointMake(point.x * multiplier, point.y * multiplier);
 }
+
+CGPoint CGPointNormalize(CGPoint point)
+{
+	const CGFloat length = CGPointLength(point);
+	return CGPointDivide(point, length);
+}
+
 /**
  Length of CGPoint when it represents a vector
  */

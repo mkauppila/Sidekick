@@ -76,6 +76,19 @@
 	GHAssertEquals(actual.y, expected.y, @"");
 }
 
+- (void)testNormalization
+{
+	CGPoint point = CGPointMake(3.0f, 1.0f);
+	CGPoint expected = CGPointMake(0.948f, 0.316f);
+
+	CGPoint actual = CGPointNormalize(point);
+
+	GHAssertEqualsWithAccuracy(actual.x, expected.x, 0.001f,
+							   @"After normalization x should be 0.802");
+	GHAssertEqualsWithAccuracy(actual.y, expected.y, 0.001f,
+							   @"After normalization x should be 0.267");
+}
+
 - (void)testLength
 {
 	CGPoint point = CGPointMake(1.0f, 1.0f);
