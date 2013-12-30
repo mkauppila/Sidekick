@@ -39,6 +39,6 @@ CGPoint CGPointSubtract(CGPoint p1, CGPoint p2)
  */
 CGFloat CGPointLength(CGPoint p)
 {
-	return 0.0f;
+	return sqrtf(p.x * p.x + p.y * p.y);
 }
 

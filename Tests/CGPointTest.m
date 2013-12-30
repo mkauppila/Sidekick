@@ -56,9 +56,10 @@
 - (void)testLength
 {
 	CGPoint point = CGPointMake(1.0f, 1.0f);
-	const CGFloat expected = 1.0f;
+	const CGFloat expected = 1.4142f;
 	const CGFloat actual = CGPointLength(point);
-	GHAssertEquals(expected, actual, @"");
+	//GHAssertEquals(expected, actual, @"");
+	GHAssertEqualsWithAccuracy(expected, actual, 0.001, @"");
 }
 
 @end
