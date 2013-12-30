@@ -39,4 +39,5 @@
 #import "NSDate+Sidekick.h"
 #import "UIDevice+Sidekick.h"
 #import "UIWebView+Sidekick.h"
+#import "CGPointAdditions.h"
 
