@@ -96,6 +96,7 @@
 {
 	const NSUInteger dateComponentFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
 	NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
+	[calendar setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
 	
 	NSDateComponents *left  = [calendar components:dateComponentFlags fromDate:self];
 	NSDateComponents *right = [calendar components:dateComponentFlags fromDate:date];

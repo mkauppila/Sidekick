@@ -52,6 +52,17 @@
 	GHAssertTrue([date1 isSameDay:tomorrow] == NO, @"The given days should not be the same");
 }
 
+- (void)testIsSameDayMidnight
+{
+	NSDate *date1 = [NSDate today];
+	NSDate *date2 = [date1 dateAsMidnight];
+	GHTestLog(@"date1: %@", date1);
+	GHTestLog(@"date2: %@", date2);
+	
+	GHAssertTrue([date1 isSameDay:date1], @"The day should match with itself");
+	GHAssertTrue([date1 isSameDay:date2], @"The given days should be the same");
+}
+
 - (void)testHttpDate
 {
 	NSString *httpDateString = @"Tue, 15 Nov 1994 08:12:31 GMT";
