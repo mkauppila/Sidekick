@@ -85,7 +85,6 @@
 - (NSDate *)dateAsMidnight
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    [calendar setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
 	NSUInteger componentFlags = NSMonthCalendarUnit | NSDayCalendarUnit | NSYearCalendarUnit;
     NSDateComponents *components = [calendar components:componentFlags
 											   fromDate:self];
@@ -96,7 +95,6 @@
 {
 	const NSUInteger dateComponentFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
 	NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
-	[calendar setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
 	
 	NSDateComponents *left  = [calendar components:dateComponentFlags fromDate:self];
 	NSDateComponents *right = [calendar components:dateComponentFlags fromDate:date];
